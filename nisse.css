@@ -1,0 +1,47 @@
+svg {
+    background-color: green;
+}
+#bot {
+    fill: white;
+    stroke: green;
+    stroke-width: 3;
+                
+}
+#cir1 {
+    fill: white;
+    stroke: green;
+    stroke-width: 3;
+}
+#cir2 {     
+}
+#cir3 {
+    stroke: green;
+    stroke-width: 3;
+    fill: white;
+}
+#cir4 {
+    fill: green;
+}
+#cir5 {
+    fill: green;
+}
+#licir2 {
+    stroke: green;
+    stroke-width: 3;
+    fill: white;
+}
+#licir1 {
+    stroke: green;
+    stroke-width: 3;
+    fill: white;
+}
+#top {
+    fill: white;
+}
+#wheel {
+    fill: white;
+}
+text {
+    fill: green;
+    font-size: 27px;
+}

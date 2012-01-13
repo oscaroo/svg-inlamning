@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8" />
+    <title>Nisse loggan</title>
+    <link href="nisse.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<svg version="1.1"
+	  baseProfile="full"
+	  xmlns="http://www.w3.org/2000/svg"
+	  width="1300"
+	  height="600"
+	  viewport="0 0 1300 600">
+	  <defs> 
+	  </defs>
+	  
+	  <g>
+	  <polygon points="70,250 260,250 260,226 320,226 320,250 450,250 450,300 70,300 70,250 " id="bot" />
+	  <g id="top">
+	      <polygon points="120,181.5 353,181.5 353,210 318.5,210 318.5,232 261.5,232 261.5,210 120,210 120,180 " />
+	  </g>
+	  <circle cx="120"   cy="205" r="25" id="cir1" />
+      <g id="wheel">
+	      <circle cx="392.5" cy="180" r="40" id="cir2" />
+	      <polyline points="382.5,150 402.5,150 392.5,125" />
+	      <polyline points="382.5,210 402.5,210 392.5,235" />
+	      <polyline points="422.5,170 422.5,190 447.5,180" />
+	      <polyline points="362.5,170 362.5,190 337.5,180" />  
+	  </g>
+	  <circle cx="392.5" cy="180" r="25" id="cir3" />
+	  <polyline points="95,205 85,250 155,250 145,205" id="licir1" />
+	  <polyline points="367.5,180 347.5,250 437.5,250 417.5,180" id="licir2" />
+	  <circle cx="392.5" cy="180" r="6"  id="cir4" />
+	  <circle cx="120"   cy="205" r="6"  id="cir5" />
+	  </g>
+	  <text x="85" y="285">NILS ERICSONSGYMNASIET</text>	  
+</svg>	
+<script>
+
+var hit = document.getElementById("top");
+var wheel = document.getElementById("wheel");
+var hit_degree = -8.5;
+var degree = 0;
+var hit_dir = "upp";
+
+function snurra() {
+    // Snurrar hjulet
+    degree += 2;
+    wheel.setAttribute("transform", "rotate(" + degree + " 392.5 180)");
+
+    
+if (hit_dir == "upp") {
+    // Hammare upp
+    hit_degree -= 0.40625;
+    hit.setAttribute("transform", "rotate(" + hit_degree + " 120 205)");
+        if (hit_degree <= -16) {
+            hit_dir = "ner";
+        }   
+    } else {
+    // Hammare ner
+    hit_degree += 1;
+    hit.setAttribute("transform", "rotate(" + hit_degree + " 120 205)");
+        if (hit_degree >= -4) {
+            hit_dir = "upp";
+        }
+    }
+    setTimeout("snurra()", 40);    
+}
+snurra();
+</script>
+</body>
+</html>
+
+
+
+
