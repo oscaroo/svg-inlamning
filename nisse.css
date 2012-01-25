@@ -1,47 +1,20 @@
 svg {
-    background-color: green;
+  background-color: green;
 }
-#bot {
-    fill: white;
-    stroke: green;
-    stroke-width: 3;
-                
+#bot, #cir1, #cir3, #licir1, #licir2 {
+  fill: white;
+  stroke: green;
+  stroke-width: 3;             
 }
-#cir1 {
-    fill: white;
-    stroke: green;
-    stroke-width: 3;
+#top, #wheel { 
+  fill: white;    
 }
-#cir2 {     
-}
-#cir3 {
-    stroke: green;
-    stroke-width: 3;
-    fill: white;
-}
-#cir4 {
-    fill: green;
-}
-#cir5 {
-    fill: green;
-}
-#licir2 {
-    stroke: green;
-    stroke-width: 3;
-    fill: white;
-}
-#licir1 {
-    stroke: green;
-    stroke-width: 3;
-    fill: white;
-}
-#top {
-    fill: white;
-}
-#wheel {
-    fill: white;
+#cir4, #cir5 {
+  fill: green;
 }
 text {
-    fill: green;
-    font-size: 27px;
+  fill: green;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Times New Roman', serif;
 }
